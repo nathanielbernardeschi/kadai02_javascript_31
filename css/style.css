@@ -1,0 +1,135 @@
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title_main{
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  color: #808080;
+  font-size: 30px;
+}
+
+.entry_form{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+
+dl{  
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dl dt{
+  width: 35%;
+  height: 30px; 
+  background-color: #dadadaa4;
+  margin: 1px 0;  
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dl dd{
+  width: 65%;
+  height: 30px;
+  background-color: #F3F3F3;
+  margin: 1px 0;  
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#btn{
+  display: block;
+  width: 20%;
+  height: 30px;
+  margin: 10px auto;
+  padding: 1px;  
+  color: #1d779e;
+  border: solid 2px #1d779e;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#btn:hover {
+  background: #1d779e;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#shopDate{
+  height: 20px;
+  width: 150px;
+  margin: 3px 10px;
+}
+#shopName{
+  height: 18px;  
+  width: 360px;
+  margin: 3px 10px;
+}
+#shopType{
+  height: 23px;
+  width: 150px;
+  margin: 3px 10px;
+}
+#evaluation{
+  height: 23px;
+  width: 150px;
+  margin: 3px 10px;
+}
+#shopMemo{
+  height: 18px;
+  width: 360px;
+  margin: 3px 10px;
+}
+
+
+table{  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-style: solid;
+}
+
+table tr:nth-child(odd){
+  background: #1d779e77;
+}
+
+th{
+  color: #FFFFFF;
+  background:#1d779e;
+  padding:10px;
+  text-align: center;
+  border-style: none dotted;
+  border-color: #FFFFFF;
+}
+
+.required::after{
+  content: "必須";
+  background-color: #EBB513;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin: 0px 5px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+td{
+  padding:10px;
+  text-align: center;
+  border-color: #FFFFFF;
+}

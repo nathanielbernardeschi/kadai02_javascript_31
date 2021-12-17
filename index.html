@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>list</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body onload="load()"><!--htmlを読み込む際ファンクションを-->
+	<header>
+		<h1 class="title_main">RESTAURANTS LIST</h1>
+	</header>
+	<main>
+		<form class="entry_form">
+			<dl>
+				<dt><p class="required">利用日</p></dt>
+				<dd>
+					<input type="date" id="shopDate">
+				</dd>
+				<dt><p class="required">お店の名前</p></dt>
+				<dd>
+					<input type="text" id="shopName">
+				</dd>
+				<dt>ジャンル</dt></dd>
+				<dd>
+					<select type="select" name="genre" id="shopType">
+						<option value="和食">和食</option>
+						<option value="アジア料理">アジア料理</option>
+						<option value="洋食">洋食</option>
+						<option value="肉料理">肉料理</option>
+						<option value="鍋料理">鍋料理</option>
+						<option value="カフェ">カフェ</option>
+						<option value="その他">その他</option>
+					</select>
+				</dd>
+				<dt>マイ評価</dt>
+				<dd>
+					<select type="select" name="star" id="evaluation">
+						<option value="★★★★★">★★★★★</option>
+						<option value="★★★★">★★★★</option>
+						<option value="★★★">★★★</option>
+						<option value="★★">★★</option>
+						<option value="★">★</option>
+					</select>
+				</dd>
+				<dt>備考</dt>
+				<dd>
+					<input type="text" id="shopMemo">
+				</dd>
+			</dl>
+		</form>
+		
+		<button type="button" onClick="input()" id="btn">登録</button>
+		
+		<div id="output">
+			<table>
+				<tr>
+					<th class="date">利用日</th>
+					<th class="memo">お店の名前</th>
+					<th class="memo">ジャンル</th>
+					<th class="memo">マイ評価</th>
+					<th class="memo">備考</th>
+					<th>削除</th>
+				</tr>
+			 </table>
+		</div>
+
+		<div id="count">
+			<p>{}件登録されています</p>			
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/test.js"></script>
+	</main>
+</body>
+
+</html>
